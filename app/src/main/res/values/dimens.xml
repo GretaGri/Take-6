@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLeft">24dp</dimen>
+    <dimen name="marginRight">24dp</dimen>
+    <dimen name="paddingBottom">16dp</dimen>
+    <dimen name="textSizeNumbers">42sp</dimen>
+    <dimen name="paddingText">12dp</dimen>
+    <dimen name="textSizeTeam">18sp</dimen>
+    <dimen name="marginTop">16dp</dimen>
+    <dimen name="marginBottom">16dp</dimen>
+    <dimen name="resetMarginBottom">20dp</dimen>
+    <dimen name="textSizeHeading">60sp</dimen>
+    <dimen name="picture_margin">60dp</dimen>
+    <dimen name="picture_margin_bottom">200dp</dimen>
+    <dimen name="bottom_margin">20dp</dimen>
+</resources>

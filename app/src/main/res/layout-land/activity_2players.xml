@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.take6.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curtainred"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <!-- Player one name + score + bull + Player two name + score -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/player_1_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/marlboro"
+                    android:gravity="center"
+                    android:hint="@string/playerOne"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/paddingText"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeTeam" />
+
+                <TextView
+                    android:id="@+id/player_1_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/paddingBottom"
+                    android:text="@string/zero"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSizeNumbers" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bullred2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/player_2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/marlboro"
+                    android:gravity="center"
+                    android:hint="@string/playerTwo"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/paddingText"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeTeam" />
+
+                <TextView
+                    android:id="@+id/player_2_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/paddingBottom"
+                    android:text="@string/zero"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSizeNumbers" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Player one buttons + bulls + Player two buttons -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginStart="@dimen/marginLeft"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusOnePointForPlayerOne"
+                    android:text="@string/minus_1_point"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusTwoPointsForPlayerOne"
+                    android:text="@string/minus_2_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusThreePointsForPlayerOne"
+                    android:text="@string/minus_3_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:id="@+id/minus_5_points"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusFivePointsForPlayerOne"
+                    android:text="@string/minus_5_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusSevenPointsForPlayerOne"
+                    android:text="@string/minus_7_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:src="@drawable/onebull" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:src="@drawable/twobulls" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:src="@drawable/threebulls" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:src="@drawable/fivebulls" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:src="@drawable/sevenbulls" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginRight"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusOnePointForPlayerTwo"
+                    android:text="@string/minus_1_point"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusTwoPointsForPlayerTwo"
+                    android:text="@string/minus_2_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusThreePointsForPlayerTwo"
+                    android:text="@string/minus_3_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusFivePointsForPlayerTwo"
+                    android:text="@string/minus_5_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:background="@drawable/my_button"
+                    android:fontFamily="serif"
+                    android:onClick="minusSevenPointsForPlayerTwo"
+                    android:text="@string/minus_7_points"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/resetMarginBottom"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/marginRight"
+                android:layout_marginRight="@dimen/marginRight"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="resetScore"
+                android:text="@string/reset"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="gameEnd"
+                android:text="@string/end_game"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginStart="@dimen/marginLeft"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="unDo"
+                android:text="Undo"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

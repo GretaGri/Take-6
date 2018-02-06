@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Take 6</string>
+    <string name="playerOne">Player 1</string>
+    <string name="playerTwo">Player 2</string>
+    <string name="zero">0</string>
+    <string name="minus_1_point">-1</string>
+    <string name="minus_2_points">-2</string>
+    <string name="minus_5_points">-5</string>
+    <string name="minus_3_points">-3</string>
+    <string name="minus_7_points">-7</string>
+    <string name="take_6">Take 6!</string>
+    <string name="reset">RESET</string>
+    <string name="end_game">End game</string>
+    <string name="start_game">Start game</string>
+    <string name="date_author">"<b>Year Published:</b> 1994\n<b>Designer:</b> Wolfgang Kramer"</string>
+    <string name="game_rules">Game rules</string>
+    <string name="rules_text">In Take 6! you want to score as few points as possible. To play the game, you shuffle the 104 number cards, lay out four cards face-up to start the four rows,
+        then deal ten cards to each player. \nEach turn, players simultaneously choose and reveal a card from their hand, then add the cards to the rows, with cards being placed in
+        ascending order based on their number; specifically, each card is placed in the row that ends with the highest number that\'s below the card\'s number. When the sixth card is placed
+        in a row, the owner of that card claims the other five cards and the sixth card becomes the first card in a new row. \nIn addition to a number from 1 to 104, each card has a point value.
+        After finishing ten rounds, players tally their score and see whether the game ends. Take 6! ends when someone tops \-66. When this happens, the player with the fewest points wins!
+        \nTake 6! works with 2-10 players, and the dynamics of gameplay change the more players that you have. One variant for the game has you use 34 cards, 44 cards, 54 cards, etc.
+        (instead of all 104 cards) when you have three, four, five, etc. number of players. This change allows you to know which cards are in play, thereby allowing you to track which cards
+        have been played and (theoretically) make better choices as to which card to play when.</string>
+    <string name="loser">" is total loser!"</string>
+    <string name="winner">" is winner!"</string>
+</resources>

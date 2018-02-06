@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.take6.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/curtainred"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+    <!-- Picture + heading -->
+    <TextView
+        android:id="@+id/take6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rio_grande"
+        android:layout_marginTop="20dp"
+        android:text="@string/take_6"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="80sp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="This is Android Basics Udacity and Google Scholarship program project 2. \n \nCourt counter app\n \nIt\'s purpose is to track scores between players playing card game Take 6!. "
+        android:layout_margin="32dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:layout_below="@id/take6"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Author:"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_below="@id/description"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Greta Grigutė"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@id/author"
+        android:layout_below="@id/description"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+</ScrollView>

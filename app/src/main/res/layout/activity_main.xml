@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.take6.MainActivity"
+    android:background="@drawable/curtainred"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.android.take6.MainActivity">
+
+    <!-- Picture + heading -->
+    <TextView
+        android:id="@+id/take6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rio_grande"
+        android:layout_marginTop="20dp"
+        android:text="@string/take_6"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="80sp"/>
+
+        <ImageView
+            android:id="@+id/bull"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/bullred" />
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Choose game:"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/twoPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 players"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+
+        <RadioButton
+            android:id="@+id/threePlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3-10 players"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </RadioGroup>
+
+
+    <!-- Button to start game -->
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my_button"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:onClick="gameStart"
+            android:text="@string/start_game"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+</LinearLayout>
+</ScrollView>

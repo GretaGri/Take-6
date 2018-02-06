@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curtainred">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:src="@drawable/bullred2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <EditText
+            android:id="@+id/player_1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="@string/playerOne"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_1_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/player_2_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 2"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_2_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/player_3_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 3"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_3_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <EditText
+            android:id="@+id/player_4_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 4"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_4_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <EditText
+            android:id="@+id/player_5_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 5"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_5_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_weight="3"
+            android:background="@color/colorAccent"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:src="@drawable/onebull" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:src="@drawable/twobulls" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:src="@drawable/threebulls" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:src="@drawable/fivebulls" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sevenbulls" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_weight="2"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout12"
+            tools:layout_editor_absoluteY="176dp">
+
+            <Button
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="minusOnePoint"
+                android:text="@string/minus_1_point"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="minusTwoPoints"
+                android:text="@string/minus_2_points"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="minusThreePoints"
+                android:text="@string/minus_3_points"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/minus_5_points"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="minusFivePoints"
+                android:text="@string/minus_5_points"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/my_button"
+                android:fontFamily="serif"
+                android:onClick="minusSevenPoints"
+                android:text="@string/minus_7_points"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <EditText
+            android:id="@+id/player_6_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 6"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_6_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginLeft="332dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/player_7_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 7"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_7_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginLeft="332dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <EditText
+            android:id="@+id/player_8_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 8"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_8_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginLeft="332dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <EditText
+            android:id="@+id/player_9_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 9"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_9_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <EditText
+            android:id="@+id/player_10_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marlboro"
+            android:gravity="center"
+            android:hint="Player 10"
+            android:inputType="textPersonName"
+            android:padding="@dimen/paddingText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTeam" />
+
+        <TextView
+            android:id="@+id/player_10_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeNumbers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/resetMarginBottom"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/marginRight"
+            android:layout_marginRight="@dimen/marginRight"
+            android:background="@drawable/my_button"
+            android:fontFamily="serif"
+            android:onClick="resetScore"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/my_button"
+            android:fontFamily="serif"
+            android:onClick="gameEnd"
+            android:text="@string/end_game"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
