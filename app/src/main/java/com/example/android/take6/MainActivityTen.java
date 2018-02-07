@@ -728,60 +728,70 @@ public class MainActivityTen extends CustomToast {
                 nameOne = "Player 1";
             }
             messageLose = nameOne + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerTwo <= -66 && scorePlayerTwo < scorePlayerOne && scorePlayerTwo < scorePlayerThree && scorePlayerTwo < scorePlayerFour && scorePlayerTwo < scorePlayerFive && scorePlayerTwo < scorePlayerSix && scorePlayerTwo < scorePlayerSeven && scorePlayerTwo < scorePlayerEight && scorePlayerTwo < scorePlayerNine && scorePlayerTwo < scorePlayerTen) {
             nameTwo = playerTwo.getText().toString();
             if (nameTwo.equals("")) {
                 nameTwo = "Player 2";
             }
             messageLose = nameTwo + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerThree <= -66 && scorePlayerThree < scorePlayerOne && scorePlayerThree < scorePlayerTwo && scorePlayerThree < scorePlayerFour && scorePlayerThree < scorePlayerFive && scorePlayerThree < scorePlayerSix && scorePlayerThree < scorePlayerSeven && scorePlayerThree < scorePlayerEight && scorePlayerThree < scorePlayerNine && scorePlayerThree < scorePlayerTen) {
             nameThree = playerThree.getText().toString();
             if (nameThree.equals("")) {
-                nameThree = "Player 9";
+                nameThree = "Player 3";
             }
             messageLose = nameThree + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerFour <= -66 && scorePlayerFour < scorePlayerOne && scorePlayerFour < scorePlayerThree && scorePlayerFour < scorePlayerTwo && scorePlayerFour < scorePlayerFive && scorePlayerFour < scorePlayerSix && scorePlayerFour < scorePlayerSeven && scorePlayerFour < scorePlayerEight && scorePlayerFour < scorePlayerNine && scorePlayerFour < scorePlayerTen) {
             nameFour = playerFour.getText().toString();
             if (nameFour.equals("")) {
                 nameFour = "Player 4";
             }
             messageLose = nameFour + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerFive <= -66 && scorePlayerFive < scorePlayerOne && scorePlayerFive < scorePlayerThree && scorePlayerFive < scorePlayerTwo && scorePlayerFive < scorePlayerFour && scorePlayerFive < scorePlayerSix && scorePlayerFive < scorePlayerSeven && scorePlayerFive < scorePlayerEight && scorePlayerFive < scorePlayerNine && scorePlayerFive < scorePlayerTen) {
             nameFive = playerFive.getText().toString();
             if (nameFive.equals("")) {
                 nameFive = "Player 5";
             }
             messageLose = nameFive + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerSix <= -66 && scorePlayerSix < scorePlayerOne && scorePlayerSix < scorePlayerThree && scorePlayerSix < scorePlayerTwo && scorePlayerSix < scorePlayerFour && scorePlayerSix < scorePlayerFive && scorePlayerSix < scorePlayerSeven && scorePlayerSix < scorePlayerEight && scorePlayerSix < scorePlayerNine && scorePlayerSix < scorePlayerTen) {
             nameSix = playerSix.getText().toString();
             if (nameSix.equals("")) {
                 nameSix = "Player 6";
             }
             messageLose = nameSix + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerSeven <= -66 && scorePlayerSeven < scorePlayerOne && scorePlayerSeven < scorePlayerThree && scorePlayerSeven < scorePlayerTwo && scorePlayerSeven < scorePlayerFour && scorePlayerSeven < scorePlayerFive && scorePlayerSeven < scorePlayerSix && scorePlayerSeven < scorePlayerEight && scorePlayerSeven < scorePlayerNine && scorePlayerSeven < scorePlayerTen) {
             nameSeven = playerSeven.getText().toString();
             if (nameSeven.equals("")) {
                 nameSeven = "Player 7";
             }
             messageLose = nameSeven + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerEight <= -66 && scorePlayerEight < scorePlayerOne && scorePlayerEight < scorePlayerThree && scorePlayerEight < scorePlayerTwo && scorePlayerEight < scorePlayerFour && scorePlayerEight < scorePlayerFive && scorePlayerEight < scorePlayerSeven && scorePlayerEight < scorePlayerSix && scorePlayerEight < scorePlayerNine && scorePlayerEight < scorePlayerTen) {
             nameEight = playerEight.getText().toString();
             if (nameEight.equals("")) {
                 nameEight = "Player 8";
             }
             messageLose = nameEight + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerNine <= -66 && scorePlayerNine < scorePlayerOne && scorePlayerNine < scorePlayerThree && scorePlayerNine < scorePlayerTwo && scorePlayerNine < scorePlayerFour && scorePlayerNine < scorePlayerFive && scorePlayerNine < scorePlayerSeven && scorePlayerNine < scorePlayerEight && scorePlayerNine < scorePlayerSix && scorePlayerNine < scorePlayerTen) {
             nameNine = playerNine.getText().toString();
             if (nameNine.equals("")) {
                 nameNine = "Player 9";
             }
             messageLose = nameNine + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerTen <= -66 && scorePlayerTen < scorePlayerOne && scorePlayerTen < scorePlayerThree && scorePlayerTen < scorePlayerTwo && scorePlayerTen < scorePlayerFour && scorePlayerTen < scorePlayerFive && scorePlayerTen < scorePlayerSeven && scorePlayerTen < scorePlayerEight && scorePlayerTen < scorePlayerNine && scorePlayerTen < scorePlayerSix) {
             nameNine = playerTen.getText().toString();
             if (nameTen.equals("")) {
                 nameTen = "Player 10";
             }
-            message = nameTen + getString(R.string.loser);
+            messageLose = nameTen + getString(R.string.loser);
+            toast(messageLose);
         } else if (scorePlayerOne > -66 && scorePlayerTwo > -66 && scorePlayerThree > -66 && scorePlayerFour > -66 && scorePlayerFive > -66 && scorePlayerSix > -66 && scorePlayerSeven > -66 && scorePlayerEight > -66 && scorePlayerNine > -66 && scorePlayerTen > -66) {
             String toast_message = "Keep playing";
             Toast.makeText(MainActivityTen.this, toast_message, Toast.LENGTH_SHORT).show();
@@ -790,79 +800,79 @@ public class MainActivityTen extends CustomToast {
             toast(message);
         }
 
-        if (scorePlayerTwo < 0 && scorePlayerThree < 0 && scorePlayerFour < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerOne > scorePlayerTwo && scorePlayerOne > scorePlayerThree && scorePlayerOne > scorePlayerFour && scorePlayerOne > scorePlayerFive && scorePlayerOne > scorePlayerSix && scorePlayerOne > scorePlayerSeven && scorePlayerOne > scorePlayerEight && scorePlayerOne > scorePlayerNine && scorePlayerOne > scorePlayerTen) {
+      if (scorePlayerTwo < 0 && scorePlayerThree < 0 && scorePlayerFour < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerOne > scorePlayerTwo && scorePlayerOne > scorePlayerThree && scorePlayerOne > scorePlayerFour && scorePlayerOne > scorePlayerFive && scorePlayerOne > scorePlayerSix && scorePlayerOne > scorePlayerSeven && scorePlayerOne > scorePlayerEight && scorePlayerOne > scorePlayerNine && scorePlayerOne > scorePlayerTen) {
             nameOne = playerOne.getText().toString();
             if (nameOne.equals("")) {
                 nameOne = "Player 1";
             }
             messageWins = nameOne + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerThree < 0 && scorePlayerFour < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerTwo > scorePlayerOne && scorePlayerTwo > scorePlayerThree && scorePlayerTwo > scorePlayerFour && scorePlayerTwo > scorePlayerFive && scorePlayerTwo > scorePlayerSix && scorePlayerTwo > scorePlayerSeven && scorePlayerTwo > scorePlayerEight && scorePlayerTwo > scorePlayerNine && scorePlayerTwo > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerThree < 0 && scorePlayerFour < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerTwo > scorePlayerOne && scorePlayerTwo > scorePlayerThree && scorePlayerTwo > scorePlayerFour && scorePlayerTwo > scorePlayerFive && scorePlayerTwo > scorePlayerSix && scorePlayerTwo > scorePlayerSeven && scorePlayerTwo > scorePlayerEight && scorePlayerTwo > scorePlayerNine && scorePlayerTwo > scorePlayerTen) {
             nameTwo = playerTwo.getText().toString();
             if (nameTwo.equals("")) {
                 nameTwo = "Player 2";
             }
             messageWins = nameTwo + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerThree > scorePlayerOne && scorePlayerThree > scorePlayerTwo && scorePlayerThree > scorePlayerFour && scorePlayerThree > scorePlayerFive && scorePlayerThree > scorePlayerSix && scorePlayerThree > scorePlayerSeven && scorePlayerThree > scorePlayerEight && scorePlayerThree > scorePlayerNine && scorePlayerThree > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerThree > scorePlayerOne && scorePlayerThree > scorePlayerTwo && scorePlayerThree > scorePlayerFour && scorePlayerThree > scorePlayerFive && scorePlayerThree > scorePlayerSix && scorePlayerThree > scorePlayerSeven && scorePlayerThree > scorePlayerEight && scorePlayerThree > scorePlayerNine && scorePlayerThree > scorePlayerTen) {
             nameThree = playerThree.getText().toString();
             if (nameThree.equals("")) {
                 nameThree = "Player 3";
             }
             messageWins = nameThree + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerFour > scorePlayerOne && scorePlayerFour > scorePlayerTwo && scorePlayerFour > scorePlayerThree && scorePlayerFour > scorePlayerFive && scorePlayerFour > scorePlayerSix && scorePlayerFour > scorePlayerSeven && scorePlayerFour > scorePlayerEight && scorePlayerFour > scorePlayerNine && scorePlayerFour > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerFour > scorePlayerOne && scorePlayerFour > scorePlayerTwo && scorePlayerFour > scorePlayerThree && scorePlayerFour > scorePlayerFive && scorePlayerFour > scorePlayerSix && scorePlayerFour > scorePlayerSeven && scorePlayerFour > scorePlayerEight && scorePlayerFour > scorePlayerNine && scorePlayerFour > scorePlayerTen) {
             nameFour = playerFour.getText().toString();
             if (nameFour.equals("")) {
                 nameFour = "Player 4";
             }
             messageWins = nameFour + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerFive > scorePlayerOne && scorePlayerFive > scorePlayerThree && scorePlayerFive > scorePlayerFour && scorePlayerFive > scorePlayerThree && scorePlayerFive > scorePlayerSix && scorePlayerFive > scorePlayerSeven && scorePlayerFive > scorePlayerEight && scorePlayerFive > scorePlayerNine && scorePlayerFive > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerFive > scorePlayerOne && scorePlayerFive > scorePlayerThree && scorePlayerFive > scorePlayerFour && scorePlayerFive > scorePlayerThree && scorePlayerFive > scorePlayerSix && scorePlayerFive > scorePlayerSeven && scorePlayerFive > scorePlayerEight && scorePlayerFive > scorePlayerNine && scorePlayerFive > scorePlayerTen) {
             nameFive = playerFive.getText().toString();
             if (nameFive.equals("")) {
                 nameFive = "Player 5";
             }
             messageWins = nameFive + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerSix > scorePlayerOne && scorePlayerSix > scorePlayerThree && scorePlayerSix > scorePlayerFour && scorePlayerSix > scorePlayerThree && scorePlayerSix > scorePlayerFive && scorePlayerSix > scorePlayerSeven && scorePlayerSix > scorePlayerEight && scorePlayerSix > scorePlayerNine && scorePlayerSix > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerSix > scorePlayerOne && scorePlayerSix > scorePlayerThree && scorePlayerSix > scorePlayerFour && scorePlayerSix > scorePlayerThree && scorePlayerSix > scorePlayerFive && scorePlayerSix > scorePlayerSeven && scorePlayerSix > scorePlayerEight && scorePlayerSix > scorePlayerNine && scorePlayerSix > scorePlayerTen) {
             nameSix = playerSix.getText().toString();
             if (nameSix.equals("")) {
                 nameSix = "Player 6";
             }
             messageWins = nameSix + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerSeven > scorePlayerOne && scorePlayerSeven > scorePlayerThree && scorePlayerSeven > scorePlayerFour && scorePlayerSeven > scorePlayerThree && scorePlayerSeven > scorePlayerFive && scorePlayerSeven > scorePlayerSix && scorePlayerSeven > scorePlayerEight && scorePlayerSeven > scorePlayerNine && scorePlayerSeven > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerEight < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerSeven > scorePlayerOne && scorePlayerSeven > scorePlayerThree && scorePlayerSeven > scorePlayerFour && scorePlayerSeven > scorePlayerThree && scorePlayerSeven > scorePlayerFive && scorePlayerSeven > scorePlayerSix && scorePlayerSeven > scorePlayerEight && scorePlayerSeven > scorePlayerNine && scorePlayerSeven > scorePlayerTen) {
             nameSeven = playerSeven.getText().toString();
             if (nameSeven.equals("")) {
                 nameSeven = "Player 7";
             }
             messageWins = nameSeven + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerEight > scorePlayerOne && scorePlayerEight > scorePlayerThree && scorePlayerEight > scorePlayerFour && scorePlayerEight > scorePlayerThree && scorePlayerEight > scorePlayerFive && scorePlayerEight > scorePlayerSix && scorePlayerEight > scorePlayerSeven && scorePlayerEight > scorePlayerNine && scorePlayerEight > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerNine < 0 && scorePlayerTen < 0 && scorePlayerEight > scorePlayerOne && scorePlayerEight > scorePlayerThree && scorePlayerEight > scorePlayerFour && scorePlayerEight > scorePlayerThree && scorePlayerEight > scorePlayerFive && scorePlayerEight > scorePlayerSix && scorePlayerEight > scorePlayerSeven && scorePlayerEight > scorePlayerNine && scorePlayerEight > scorePlayerTen) {
             nameEight = playerEight.getText().toString();
             if (nameEight.equals("")) {
                 nameEight = "Player 8";
             }
             messageWins = nameEight + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerTen < 0 && scorePlayerNine > scorePlayerOne && scorePlayerNine > scorePlayerThree && scorePlayerNine > scorePlayerFour && scorePlayerNine > scorePlayerThree && scorePlayerNine > scorePlayerFive && scorePlayerNine > scorePlayerSix && scorePlayerNine > scorePlayerSeven && scorePlayerNine > scorePlayerEight && scorePlayerNine > scorePlayerTen) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerEight < 0 && scorePlayerTen < 0 && scorePlayerNine > scorePlayerOne && scorePlayerNine > scorePlayerThree && scorePlayerNine > scorePlayerFour && scorePlayerNine > scorePlayerThree && scorePlayerNine > scorePlayerFive && scorePlayerNine > scorePlayerSix && scorePlayerNine > scorePlayerSeven && scorePlayerNine > scorePlayerEight && scorePlayerNine > scorePlayerTen) {
             nameNine = playerNine.getText().toString();
             if (nameNine.equals("")) {
                 nameNine = "Player 9";
             }
             messageWins = nameNine + getString(R.string.winner);
-        }
-        if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerNine < 0 && scorePlayerEight < 0 && scorePlayerTen > scorePlayerOne && scorePlayerTen > scorePlayerThree && scorePlayerTen > scorePlayerFour && scorePlayerTen > scorePlayerThree && scorePlayerTen > scorePlayerFive && scorePlayerTen > scorePlayerSix && scorePlayerTen > scorePlayerSeven && scorePlayerTen > scorePlayerNine && scorePlayerTen > scorePlayerEight) {
+          toast(messageWins);
+        } else if (scorePlayerOne < 0 && scorePlayerTwo < 0 && scorePlayerFour < 0 && scorePlayerThree < 0 && scorePlayerFive < 0 && scorePlayerSix < 0 && scorePlayerSeven < 0 && scorePlayerNine < 0 && scorePlayerEight < 0 && scorePlayerTen > scorePlayerOne && scorePlayerTen > scorePlayerThree && scorePlayerTen > scorePlayerFour && scorePlayerTen > scorePlayerThree && scorePlayerTen > scorePlayerFive && scorePlayerTen > scorePlayerSix && scorePlayerTen > scorePlayerSeven && scorePlayerTen > scorePlayerNine && scorePlayerTen > scorePlayerEight) {
             nameTen = playerTen.getText().toString();
             if (nameTen.equals("")) {
                 nameTen = "Player 10";
             }
             messageWins = nameTen + getString(R.string.winner);
+            toast(messageWins);
+        } else if (scorePlayerOne > -66 && scorePlayerTwo > -66 && scorePlayerThree > -66 && scorePlayerFour > -66 && scorePlayerFive > -66 && scorePlayerSix > -66 && scorePlayerSeven > -66 && scorePlayerEight > -66 && scorePlayerNine > -66 && scorePlayerTen > -66) {
+            String toast_message = "Keep playing";
+            Toast.makeText(MainActivityTen.this, toast_message, Toast.LENGTH_SHORT).show();
         }
-        message = messageWins + "\n" + messageLose;
-
-        toast(message);
+        }
     }
-}
-
